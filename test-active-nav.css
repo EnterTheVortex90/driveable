@@ -1,0 +1,1 @@
+body:has(#quiz.active)>nav,body.mock-active>nav{display:none!important}

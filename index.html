@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102b47">
+<meta name="description" content="Driveable — UK theory test practice">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="driveable.css">
+<link rel="stylesheet" href="enhancements.css">
+<link rel="stylesheet" href="hazard-guide.css">
+<link rel="stylesheet" href="mock-options.css">
+<link rel="stylesheet" href="mock-engine.css">
+<link rel="stylesheet" href="mock-controls-override.css">
+<link rel="stylesheet" href="official-layout.css">
+<link rel="stylesheet" href="mock-responsive.css">
+<link rel="stylesheet" href="test-controls-fix.css">
+<link rel="stylesheet" href="test-active-nav.css">
+<link rel="stylesheet" href="theme-polish.css">
+<link rel="stylesheet" href="ux-fixes.css">
+<link rel="stylesheet" href="settings.css">
+<link rel="stylesheet" href="palette.css">
+<link rel="stylesheet" href="learning-tools.css">
+<link rel="stylesheet" href="progress-insights.css">
+<title>Driveable — Theory Test Practice</title>
+</head>
+<body>
+<div class="shell">
+<header>
+<button class="logo" data-page="home">
+<i>▰</i>
+<span>driveable<small>THEORY TEST PRACTICE</small>
+</span>
+</button>
+<button id="install" class="install" hidden>Install</button>
+</header>
+<main>
+<section id="home" class="page active">
+<div class="hero">
+<div class="hero-copy">
+<p class="kicker">UK CAR THEORY TEST</p>
+<h1>Pass with your<br>
+<em>headlights on.</em>
+</h1>
+<p>High-quality practice for the rules of the road, road signs and hazards ahead.</p>
+<button class="cta" data-page="mock">Start a theory mock <b>→</b>
+</button>
+</div>
+<div class="hero-art">
+<div class="arc a1">
+</div>
+<div class="arc a2">
+</div>
+<div class="car">▰</div>
+<span>50</span>
+<small>QUESTIONS</small>
+</div>
+</div>
+<div class="dash">
+<div>
+<small>QUESTIONS PRACTISED</small>
+<b id="answered">0</b>
+</div>
+<div>
+<small>AVERAGE SCORE</small>
+<b id="accuracy">—</b>
+</div>
+<button data-page="progress">Your progress <b>→</b>
+</button>
+</div>
+<div class="section-title">
+<div>
+<p class="kicker">START HERE</p>
+<h2>Choose your route</h2>
+</div>
+<button class="link" data-page="learn">How it works →</button>
+</div>
+<div class="routes">
+<button data-page="practice">
+<i class="purple">◎</i>
+<b>Practise by topic</b>
+<span>Master one subject at a time</span>
+<strong>→</strong>
+</button>
+<button data-page="signs">
+<i class="amber">△</i>
+<b>Road signs</b>
+<span>Know the signs before you see them</span>
+<strong>→</strong>
+</button>
+<button data-page="mock">
+<i class="green">✓</i>
+<b>Theory mock test</b>
+<span>50 questions under test conditions</span>
+<strong>→</strong>
+</button>
+</div>
+<p class="fine">Original practice content, designed around the UK car theory-test format. Not affiliated with the DVSA.</p>
+</section>
+<section id="practice" class="page">
+<div class="top">
+<button class="back" data-page="home">←</button>
+<div>
+<p class="kicker">PRACTISE</p>
+<h1>Pick a topic</h1>
+</div>
+</div>
+<p class="lede">Learn the why, not just the answer. Every question comes with a clear explanation.</p>
+<div id="topics" class="topics">
+</div>
+</section>
+<section id="signs" class="page">
+<div class="top">
+<button class="back" data-page="home">←</button>
+<div>
+<p class="kicker">ROAD SIGNS</p>
+<h1>Signs that stick</h1>
+</div>
+</div>
+<div class="sign-intro">
+<b>Shape tells a story.</b>
+<span>Circles give orders. Triangles warn. Rectangles guide.</span>
+</div>
+<div id="signsList" class="signs">
+</div>
+</section>
+<section id="mock" class="page">
+<div class="top">
+<button class="back" data-page="home">←</button>
+<div>
+<p class="kicker">THEORY MOCK</p>
+<h1>Take the test</h1>
+</div>
+</div>
+<div class="mock-card">
+<div class="ring">
+<b>50</b>
+<small>QUESTIONS</small>
+</div>
+<h2>Just like test day, without the nerves.</h2>
+<ul>
+<li>
+<b>57 minutes</b> to answer 50 multiple-choice questions</li>
+<li>
+<b>43 correct</b> needed to reach the theory pass standard</li>
+<li>Review your score and focus on weaker topics</li>
+</ul>
+<div class="mock-options">
+<button class="cta" id="beginMock">Start theory mock <b>→</b>
+</button>
+<p class="muted" style="margin:14px 0 0">Hazard perception is available as an official DVSA learning guide in the Hazards tab.</p>
+</div>
+<small class="muted">Your results are saved only on this device.</small>
+</div>
+</section>
+<section id="quiz" class="page">
+<div class="testbar">
+<button id="quit">× Quit</button>
+<span id="timer">57:00</span>
+<span id="counter">1 / 50</span>
+</div>
+<div class="track">
+<i id="track">
+</i>
+</div>
+<div id="quizCard">
+</div>
+</section>
+<section id="hazard" class="page">
+<div class="top">
+<button class="back" data-page="home">←</button>
+<div>
+<p class="kicker">HAZARD AWARENESS</p>
+<h1>Learn hazard perception</h1>
+</div>
+</div>
+<p class="lede">A developing hazard is something that would make you change speed or direction. Look well ahead at road users, side roads, parked vehicles and changing traffic conditions.</p>
+<article class="hazard-guide-card">
+<p class="kicker">OFFICIAL DVSA GUIDE</p>
+<h2>See how the test works</h2>
+<p>This video is hosted by the Driver and Vehicle Standards Agency on YouTube. It explains what to look for, when to click and how the hazard-perception scoring approach works.</p>
+<div id="dvsaGuidePlayer" class="dvsa-player"><iframe title="Official DVSA hazard perception guide" src="https://www.youtube-nocookie.com/embed/SdQRkmdhwJs?rel=0&amp;playsinline=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+<p class="muted">Video provided by YouTube. An internet connection is required. Driveable does not host or score this footage.</p>
+<a class="hazard-youtube-fallback" href="https://www.youtube.com/watch?v=SdQRkmdhwJs" target="_blank" rel="noreferrer">Player not loading? Watch on YouTube ↗</a>
+</article>
+<article class="hazard-guide-card hazard-tips">
+<h2>What to practise</h2>
+<ul>
+<li>Scan well ahead, not only the vehicle directly in front.</li>
+<li>Notice people near the kerb, side-road traffic and vehicles that may pull out.</li>
+<li>Click when a situation starts to develop into something that could affect your speed or direction.</li>
+</ul>
+</article>
+</section>
+<section id="result" class="page">
+<div class="result">
+<p class="kicker">MOCK COMPLETE</p>
+<div id="resultBadge">✓</div>
+<h1 id="resultTitle">
+</h1>
+<p id="resultText">
+</p>
+<div class="score">
+<div>
+<b id="theoryScore">0/50</b>
+<small>THEORY SCORE</small>
+</div>
+<div>
+<b id="hazardScore">0/5</b>
+<small>HAZARD AWARENESS</small>
+</div>
+</div>
+<button class="cta" data-page="mock">Take another mock <b>→</b>
+</button>
+<button class="link" data-page="progress">View my records →</button>
+</div>
+</section>
+<section id="progress" class="page">
+<div class="top">
+<button class="back" data-page="home">←</button>
+<div>
+<p class="kicker">YOUR JOURNEY</p>
+<h1>Progress</h1>
+</div>
+</div>
+<div class="stats">
+<div>
+<small>ANSWERED</small>
+<b id="pAnswered">0</b>
+</div>
+<div>
+<small>ACCURACY</small>
+<b id="pAccuracy">—</b>
+</div>
+<div>
+<small>MOCKS</small>
+<b id="pMocks">0</b>
+</div>
+</div>
+<h2>Recent mock tests</h2>
+<div id="records" class="records">
+</div>
+<button id="clear" class="clear">Clear data from this device</button>
+</section>
+<section id="learn" class="page">
+<div class="top">
+<button class="back" data-page="home">←</button>
+<div>
+<p class="kicker">THE LOWDOWN</p>
+<h1>Know the format</h1>
+</div>
+</div>
+<div class="learn">
+<article>
+<b>01</b>
+<h2>Multiple choice</h2>
+<p>You have 57 minutes for 50 questions. Three questions use a silent driving video; you can replay it and return to flagged questions.</p>
+</article>
+<article>
+<b>02</b>
+<h2>Hazard perception</h2>
+<p>You take this after the questions. Look well ahead for developing hazards—the things that may make you alter your speed or direction.</p>
+</article>
+<article>
+<b>03</b>
+<h2>Highway Code</h2>
+<p>Rules evolve, so use this app for practice and check the live Highway Code before your test.</p>
+<a href="https://www.gov.uk/guidance/the-highway-code" target="_blank" rel="noreferrer">Read the Highway Code ↗</a>
+</article>
+</div>
+</section>
+</main>
+</div>
+<nav>
+<button class="on" data-page="home">⌂<span>Home</span>
+</button>
+<button data-page="practice">◎<span>Practise</span>
+</button>
+<button data-page="mock">✓<span>Mock</span>
+</button>
+<button data-page="progress">◔<span>Progress</span>
+</button>
+</nav>
+<script src="questionbank.js">
+</script>
+<script src="original-question-expansion.js">
+</script>
+<script src="legacy-hazard-stubs.js">
+</script>
+<script src="driveable.js">
+</script>
+<script src="dashboard-library.js">
+</script>
+<script src="sign-catalogue-data.js">
+</script>
+<script src="sign-reference-viewer.js">
+</script>
+<script src="how-it-works-detail.js">
+</script>
+<script src="practice-session.js">
+</script>
+<script src="practice-quit-fix.js">
+</script>
+<script src="enhancements.js">
+</script>
+<script src="answer-randomizer.js">
+</script>
+<script src="mock-engine.js">
+</script>
+<script src="page-persistence.js">
+</script>
+<script src="settings.js">
+</script>
+<script src="learning-tools.js">
+</script>
+<script src="accessibility-tools.js">
+</script>
+<script src="progress-insights.js">
+</script>
+<script src="category-insights.js">
+</script>
+</body>
+</html>

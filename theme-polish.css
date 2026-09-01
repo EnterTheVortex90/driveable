@@ -1,0 +1,35 @@
+/* Driveable visual system — loaded last so every route shares the same finish. */
+:root{--ink:#0b1426;--ink-soft:#17233a;--paper:#f8f8f5;--surface:#fff;--line:#e5e7e2;--muted:#627086;--lime:#c4ff3f;--purple:#785cff;--focus:#5c45df;--danger:#c9403a;--radius:16px;--shadow:0 10px 28px rgba(11,20,38,.05)}
+body{background:#e9ebe8;color:var(--ink);font-family:Manrope,Arial,sans-serif}
+.shell{background:var(--paper);padding-left:26px;padding-right:26px}
+button,.cta,.back,.answer,.radio-row{font-family:Manrope,Arial,sans-serif!important}
+button{transition:transform .16s ease,box-shadow .16s ease,border-color .16s ease,background-color .16s ease}
+button:not(:disabled){cursor:pointer}
+button:not(:disabled):hover{transform:translateY(-1px)}
+.logo{letter-spacing:-1px}.logo i{border-radius:9px;background:var(--lime)}
+.kicker,.question .tag,.mock-tools .tag{color:var(--purple)!important;letter-spacing:.11em!important}
+h1,h2{color:var(--ink)}
+.hero{background:var(--ink);border-radius:24px;box-shadow:var(--shadow)}
+.hero .cta,.cta{background:var(--lime);border-radius:12px;min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:18px}
+.hero .cta:hover,.cta:hover{box-shadow:0 8px 20px rgba(145,195,36,.22)}
+.dash{gap:0}.dash div{padding-right:14px}.dash div+div{padding-left:14px}.dash button{border:1px solid #b9c0c9;border-radius:9px;padding:8px 11px;background:var(--surface)}
+.routes button,.topics button,.signs article,.mock-card,.question,.stats div,.record,.learn article{background:var(--surface);border-color:var(--line);box-shadow:none}
+.routes button,.topics button{border-radius:var(--radius)}
+.routes button:hover,.topics button:hover,.signs article:hover,.record:hover{border-color:#cbd0c9;box-shadow:var(--shadow)}
+.top{padding-top:16px}.back{border-radius:12px;border-color:var(--line);color:var(--ink)}
+.mock-card,.question,.result{border-radius:20px;box-shadow:var(--shadow)}
+.mock-card{padding:28px}.mock-card .cta{width:100%;margin-top:12px}
+.stats div{border-radius:14px}.record{border-radius:14px}
+.scene{border-radius:20px;box-shadow:var(--shadow)}
+.hazard-action,.clip-next{background:var(--lime)!important;color:var(--ink)!important;border-radius:12px!important;box-shadow:0 8px 22px rgba(0,0,0,.2)}
+.test-controls button,.review-actions button{border-radius:11px!important;min-height:46px}
+.test-controls #nextMock,.review-actions .cta{background:var(--ink)!important;color:#fff!important;border-color:var(--ink)!important}
+.test-controls .end{color:var(--danger)!important;border-color:#edcbc8!important}
+.radio-row{border-radius:14px!important;border-color:#d9e0df!important;min-height:62px}
+.radio-row:hover{border-color:#b7c0c4!important;background:#fbfcfb}
+.radio-row.chosen{border-color:var(--focus)!important;background:#f3f1ff!important}
+.radio-row.chosen .radio-dot{border-color:var(--focus)!important}.radio-row>b{color:var(--focus)!important}
+.review-grid button{border-radius:10px!important}.review-grid .answered{background:#eff9df!important;border-color:#b9e46b!important}.review-grid .empty{border-color:#e29a94!important;color:var(--danger)!important}
+nav{border-color:var(--line);background:rgba(255,255,255,.94)}nav .on{color:var(--purple)}
+@media(min-width:900px){.shell{max-width:920px;padding-left:32px;padding-right:32px}.hero{min-height:320px}.routes{gap:12px}.topics{gap:10px}.topics button{min-height:72px}}
+@media(max-width:520px){.shell{padding-left:18px;padding-right:18px}.hero{padding:24px;min-height:310px}.hero-copy{width:72%}.hero h1{font-size:31px}.dash{padding:16px 0}.dash div{padding-right:8px}.dash div+div{padding-left:8px}.dash b{font-size:16px}.dash button{font-size:11px;padding:8px}.mock-card,.question{padding:20px}.top h1{font-size:28px}}

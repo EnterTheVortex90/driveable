@@ -1,0 +1,10 @@
+# Unlicensed local footage: keep it out of any GitHub upload.
+assets/hazards/
+
+# Superseded sign import and temporary catalogue review images.
+assets/tsrgd-signs/
+gov-sign-review-sheets/
+gov-sign-rename-review.json
+
+# Local import tools and one-off review pages — not part of the website.
+_local-tools/
