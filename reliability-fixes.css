@@ -24,3 +24,4 @@ body.large-text{font-size:18px}body.large-text :is(p,li,button,input,select,.led
 .mock-active .radio-row{height:60px!important;min-height:60px!important}
 .mock-active.mock-review .shell{height:auto!important;min-height:100dvh!important;overflow-y:auto!important;padding-bottom:calc(112px + env(safe-area-inset-bottom))!important}
 .mock-active .review-card{padding-bottom:32px!important}
+.settings-backdrop{z-index:1000!important}
