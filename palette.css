@@ -10,7 +10,7 @@ body{background:#e5edf4;color:var(--ink)}
 .logo i{background:var(--accent-soft);color:var(--primary-strong)}
 .kicker,.question .tag,.mock-tools .tag{color:var(--primary)!important}
 .hero{background:#102b47;box-shadow:0 16px 34px rgba(16,43,71,.16)}
-.hero .kicker,h1 em{color:var(--accent)}
+.hero .kicker,.hero h1,.hero h1 em{color:var(--accent)}
 .hero .cta,.cta{background:var(--primary);color:#fff;box-shadow:none}
 .hero .cta:hover,.cta:hover{background:var(--primary-strong);box-shadow:0 8px 20px rgba(47,125,225,.24)}
 .hero-art .arc{border-color:#1f456d}.hero-art .a2{border-color:#2b5a86}.car{color:var(--accent)}
