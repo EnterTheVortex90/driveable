@@ -25,3 +25,6 @@ body.large-text{font-size:18px}body.large-text :is(p,li,button,input,select,.led
 .mock-active.mock-review .shell{height:100dvh!important;min-height:100dvh!important;overflow-y:auto!important;padding-bottom:calc(112px + env(safe-area-inset-bottom))!important}
 .mock-active .review-card{padding-bottom:32px!important}
 .settings-backdrop{z-index:1000!important}
+.mock-active.mock-review{overflow:auto!important}
+.mock-active.mock-review .shell{height:auto!important;min-height:100dvh!important;overflow:visible!important;padding-bottom:96px!important}
+.mock-active.mock-review .review-actions{position:sticky!important;bottom:0!important;z-index:20!important;margin:14px 0 0!important;padding:10px 0 calc(10px + env(safe-area-inset-bottom))!important;background:var(--paper)!important}
