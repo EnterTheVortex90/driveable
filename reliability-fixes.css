@@ -9,3 +9,11 @@ body.large-text{font-size:18px}body.large-text :is(p,li,button,input,select,.led
 .mock-active .test-controls #flag{grid-column:1 / span 2!important;grid-row:2!important}
 .mock-active .test-controls #review{grid-column:3 / span 2!important;grid-row:2!important}
 .mock-active .test-controls #endTest{grid-column:5 / span 2!important;grid-row:2!important}
+.mock-active{touch-action:manipulation}
+.mock-active .mock-banner{position:static!important;padding:8px 0 10px!important;min-height:48px!important}
+.mock-active .official-question{margin:8px 0 10px!important;padding:14px!important;border:1px solid var(--line)!important;border-radius:16px!important;background:var(--primary-soft)!important}
+.mock-active .official-question h2{margin:0 0 12px!important}
+.mock-active .test-controls{position:static!important;transform:none!important;left:auto!important;width:100%!important;margin:0!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;background:var(--paper)!important}
+.mock-active .test-controls #endTest{display:none!important}
+.mock-active .test-controls #flag{grid-column:1 / span 3!important;grid-row:2!important}
+.mock-active .test-controls #review{grid-column:4 / span 3!important;grid-row:2!important}
