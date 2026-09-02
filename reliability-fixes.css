@@ -17,3 +17,7 @@ body.large-text{font-size:18px}body.large-text :is(p,li,button,input,select,.led
 .mock-active .test-controls #endTest{display:none!important}
 .mock-active .test-controls #flag{grid-column:1 / span 3!important;grid-row:2!important}
 .mock-active .test-controls #review{grid-column:4 / span 3!important;grid-row:2!important}
+.mock-active .shell{padding-top:calc(28px + env(safe-area-inset-top))!important}
+.mock-active .official-question{padding:0!important;background:transparent!important;border:0!important}
+.mock-active .official-question h2{display:flex!important;align-items:center!important;min-height:132px;margin:0 0 10px!important;padding:16px 18px!important;background:var(--primary-soft)!important;border:1px solid var(--line)!important;border-radius:16px!important}
+.mock-active .radio-answers{gap:7px!important}
