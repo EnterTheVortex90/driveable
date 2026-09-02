@@ -22,5 +22,5 @@ body.large-text{font-size:18px}body.large-text :is(p,li,button,input,select,.led
 .mock-active .official-question h2{display:flex!important;align-items:center!important;height:132px!important;overflow:hidden!important;margin:0 0 10px!important;padding:16px 18px!important;background:var(--primary-soft)!important;border:1px solid var(--line)!important;border-radius:16px!important}
 .mock-active .radio-answers{gap:7px!important;padding:8px!important;background:var(--surface)!important;border:1px solid var(--line)!important;border-radius:16px!important}
 .mock-active .radio-row{height:60px!important;min-height:60px!important}
-.mock-active .shell:has(.review-card){height:auto!important;min-height:100dvh!important;overflow-y:auto!important;padding-bottom:calc(112px + env(safe-area-inset-bottom))!important}
+.mock-active.mock-review .shell{height:auto!important;min-height:100dvh!important;overflow-y:auto!important;padding-bottom:calc(112px + env(safe-area-inset-bottom))!important}
 .mock-active .review-card{padding-bottom:32px!important}
